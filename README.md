@@ -1,46 +1,113 @@
 # MicroStack-J
 
-MicroStack-J is a Full Stack Java application designed to demonstrate a complete microservices-based architecture using modern open-source technologies.
+Overview
 
-🚀 Overview
+MicroStack-J is a Full Stack Java application designed to demonstrate a modern microservices architecture.
+The project combines:
 
-This project serves as an educational and practical example of how to build, deploy, and scale a distributed system using Java (Spring Boot), Angular, and a set of supporting tools for service discovery, messaging, monitoring, and CI/CD.
+- Backend with Spring Boot microservices.
 
-🏗️ Architecture
+- Frontend with Angular.
 
-1) Frontend: Angular (UI for interaction with REST APIs).
+- Infrastructure with Docker, Kubernetes, and CI/CD pipelines.
 
-2) API Gateway: Spring Cloud Gateway / NGINX (routing and load balancing).
+- Data Engineering layer with open-source tools for ETL/ELT, real-time data processing, and analytics dashboards.
 
-3) Microservices: Independent Spring Boot services (e.g., Users, Games, Rentals, Payments), each with its own database.
+This project is intended for learning purposes, serving as a sandbox for practicing backend, frontend, DevOps, and data engineering integration.
 
-4) Databases: PostgreSQL, MongoDB (polyglot persistence).
+## 🏗️ Architecture
+🔹 Application Layer
 
-5) Service Discovery: Netflix Eureka / HashiCorp Consul.
+- Angular Frontend → User interface (CRUD, dashboards).
 
-6) Messaging: Apache Kafka / RabbitMQ for asynchronous communication.
+- Spring Boot Microservices → Core business logic (e.g., Person, Game Rental, Publisher).
 
-7) Monitoring & Logging: Prometheus + Grafana, ELK Stack.
+- PostgreSQL → Relational database for transactional data.
 
-8) CI/CD: GitHub Actions / Jenkins for automation.
+🔹 Infrastructure Layer
 
-9) Containerization & Orchestration: Docker + Kubernetes (Minikube or K3s for local deployment).
+- Docker → Containerization.
 
-🎯 Goals
+- Kubernetes → Orchestration and scalability.
+
+- GitHub Actions → CI/CD pipelines.
+
+- Kafka / RabbitMQ → Messaging and event-driven communication.
+
+🔹 Data Engineering Layer
+
+- Apache Kafka → Streams of business events (e.g., rentals).
+
+- MinIO (S3 compatible) → Data Lake storage for raw events.
+
+- Apache Airflow → Orchestration of ETL/ELT pipelines.
+
+- dbt (Data Build Tool) → SQL-based transformations inside the Data Warehouse.
+
+- PostgreSQL / ClickHouse → Data Warehouse for analytics.
+
+-Apache Superset / Metabase → Dashboards and BI visualization.
+
+## 📊 Data Flow Example
+
+A user rents a game (via Angular → Spring Boot → PostgreSQL).
+
+The event is published to Kafka.
+
+The Analytics Service consumes the event and stores raw data in MinIO (Data Lake).
+
+Airflow + dbt pipelines process and transform data into the Data Warehouse (PostgreSQL/ClickHouse).
+
+Superset/Metabase provides real-time dashboards accessible via the frontend.
+## Goals
 
 - Learn and practice Full Stack Java development.
 
-- Understand the principles of microservices architecture.
+- Build a modular and scalable microservices ecosystem.
 
-- Gain hands-on experience with cloud-native open-source tools.
+- Explore event-driven architecture with Kafka.
 
-- Provide a solid foundation for scaling from a monolithic MVP to a distributed system.
+- Integrate a Data Engineering pipeline for analytics.
 
-📌 Status
-
-Currently under active development as a study project. The main objective is to build a functioning MVP and then iteratively expand into a fully distributed architecture.
+- Provide dashboards for insights and monitoring.
 
 ## 🛠️ Tech Stack
+
+Backend
+
+- Java 17 + Spring Boot
+
+- REST APIs
+
+- PostgreSQL
+
+- Frontend
+
+- Angular
+
+- TypeScript
+
+Infrastructure
+
+- Docker & Docker Compose
+
+- Kubernetes
+
+- GitHub Actions
+
+Data Engineering
+
+- Apache Kafka
+
+- MinIO (Data Lake)
+
+- Apache Airflow
+
+dbt
+
+PostgreSQL / ClickHouse
+
+Apache Superset / Metabase
 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-brightgreen?logo=springboot&logoColor=white)
@@ -55,4 +122,10 @@ Currently under active development as a study project. The main objective is to 
 ![Grafana](https://img.shields.io/badge/Grafana-10.4-orange?logo=grafana&logoColor=white)
 ![ELK Stack](https://img.shields.io/badge/ELK%20Stack-Elastic%20Search%20%7C%20Logstash%20%7C%20Kibana-blueviolet?logo=elasticstack&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)
+
+## 📌 Status
+
+This project is work in progress and meant for study and experimentation.
+Future iterations may expand microservices, add new data pipelines, and improve analytics capabilities.
+
 ![Jenkins](https://img.shields.io/badge/Jenkins-Automation-D24939?logo=jenkins&logoColor=white)
