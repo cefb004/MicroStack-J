@@ -39,3 +39,20 @@ This project serves as an educational and practical example of how to build, dep
 📌 Status
 
 Currently under active development as a study project. The main objective is to build a functioning MVP and then iteratively expand into a fully distributed architecture.
+
+## 🛠️ Tech Stack
+
+![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-brightgreen?logo=springboot&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-17-red?logo=angular&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue?logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-6.0-green?logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-24.0-blue?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1.30-blue?logo=kubernetes&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-3.7-black?logo=apachekafka&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.12-FF6600?logo=rabbitmq&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-2.51-orange?logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-10.4-orange?logo=grafana&logoColor=white)
+![ELK Stack](https://img.shields.io/badge/ELK%20Stack-Elastic%20Search%20%7C%20Logstash%20%7C%20Kibana-blueviolet?logo=elasticstack&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-Automation-D24939?logo=jenkins&logoColor=white)
