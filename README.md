@@ -122,10 +122,9 @@ Apache Superset / Metabase
 ![Grafana](https://img.shields.io/badge/Grafana-10.4-orange?logo=grafana&logoColor=white)
 ![ELK Stack](https://img.shields.io/badge/ELK%20Stack-Elastic%20Search%20%7C%20Logstash%20%7C%20Kibana-blueviolet?logo=elasticstack&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-Automation-D24939?logo=jenkins&logoColor=white)
 
 ## 📌 Status
 
 This project is work in progress and meant for study and experimentation.
 Future iterations may expand microservices, add new data pipelines, and improve analytics capabilities.
-
-![Jenkins](https://img.shields.io/badge/Jenkins-Automation-D24939?logo=jenkins&logoColor=white)
